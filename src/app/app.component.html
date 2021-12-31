@@ -1,7 +1,7 @@
 <h1>Counter</h1>
-<button (click)="increase()"> +1 </button>
-<button [disabled]="cannotDecrease$ | async" (click)="decrease()"> -1 </button>
-<button [disabled]="cannotDecrease$ | async" (click)="clear()"> 0 </button>
+<button class="button" (click)="increase()"> +1 </button>
+<button class="button" [disabled]="cannotDecrease$ | async" (click)="decrease()"> -1 </button>
+<button class="button" [disabled]="cannotDecrease$ | async" (click)="clear()"> 0 </button>
 
 <p>Counter = {{ count$ | async }}</p>
 <p *ngIf="updatedAt$ | async">Last Update: {{ updatedAt$ | async | date: 'yyyy/MM/dd hh:mm:ss a' }}</p>

@@ -9,11 +9,9 @@ import { clear, decrease, increase, countSelector, updatedAtSelector } from './r
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  updatedAt?: number;
-
   count$ = this.store.select(countSelector);
   cannotDecrease$ = this.count$.pipe(map(count => count <= 0));
-  updatedAt$ = this.store.select(updatedAtSelector)
+  updatedAt$ = this.store.select(updatedAtSelector);
 
   constructor (private store: Store) {}
 

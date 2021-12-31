@@ -1,0 +1,47 @@
+.button {
+  margin-right: .5rem;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  height: 80px;
+  width: 80px;
+  line-height: 20px;
+  list-style: none;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button {
+  background-color: #4c76ea;
+}
+
+.button2 {
+  background-color: #4c76ea;
+}
+
+.button3 {
+  background-color: #ea4c66;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #144ce7;
+}
+
+.button:disabled {
+  background-color: #bbbbbb;
+}
